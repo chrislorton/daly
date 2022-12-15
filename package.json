@@ -1,0 +1,46 @@
+{
+    "name": "@chrislorton/daly",
+    "version": "0.0.1",
+    "description": "",
+    "author": "Chris Lorton <639aeca7ec19ea5442b07150@bots.bitbucket.org>",
+    "scripts": {
+        "lint": "eslint \"**/*.{js,ts,tsx,jsx}\"  --fix",
+        "rollup": "rollup -c --bundleConfigAsCjs"
+    },
+    "dependencies": {
+        "react": "^18.2.0",
+        "styled-components": "^5.3.6",
+        "typescript": "^4.9.4"
+    },
+    "devDependencies": {
+        "@rollup/plugin-commonjs": "^23.0.4",
+        "@rollup/plugin-node-resolve": "^15.0.1",
+        "@rollup/plugin-typescript": "^10.0.1",
+        "@types/react": "^18.0.26",
+        "@types/styled-components": "^5.1.26",
+        "@typescript-eslint/eslint-plugin": "^5.46.1",
+        "@typescript-eslint/parser": "^5.46.1",
+        "eslint": "^7.5.0",
+        "eslint-config-airbnb": "^18.2.0",
+        "eslint-config-prettier": "^6.11.0",
+        "eslint-plugin-chai-friendly": "^0.6.0",
+        "eslint-plugin-import": "^2.22.0",
+        "eslint-plugin-jsx-a11y": "^6.3.1",
+        "eslint-plugin-react": "^7.31.11",
+        "eslint-plugin-react-hooks": "^4.0.8",
+        "eslint-plugin-security": "^1.4.0",
+        "rollup": "^3.7.4",
+        "rollup-plugin-dts": "^5.0.0"
+    },
+    "main": "dist/cjs/index.js",
+    "module": "dist/esm/index.js",
+    "files": [
+        "dist"
+    ],
+    "types": "dist/index.d.ts",
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com/chrislorton"
+    },
+    "repository": "git@bitbucket.org:chrislorton/daly.git",
+    "license": "MIT"
+}
